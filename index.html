@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header><h1>Das Restaurant deiner Familie</h1></header>
+  <h2>Bestellung</h2>
+  <form action="https://formspree.io/f/mrgjzoag" method="POST">
+<div class="kundenlogin">
+    <fieldset>
+      <legend>Login </legend>
+
+      <label>Username: <br><input type="text" placeholder="Enter Username" name="uname" required
+            autofocus></label> <br><br>
+
+      <label>Password: <br><input type="password" placeholder="Enter Password" name="psw" required
+            autofocus></label><br><br>
+
+      <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+
+      <button type="submit">Login</button>
+
+    </fieldset>
+  </div>
+  <div>
+    <h3> Oder direkt bestellen...</h3> 
+
+    <fieldset>
+
+      <legend>Ihre Informationen</legend>
+
+      <label> First name: <br><input type="text" name="fname" placeholder="Max" required autofocus></label><br><br>
+
+      <label>Nachname: <br> <input type="text" name="lname" placeholder="Müller" required ></label><br><br>
+
+      <label>E-Mail: <br> <input type="email" name="email" required></label><br><br>
+
+      <label>Anschrift: <br> <input type="text" id="anschrift" name="anschrift" > </label><br><br>
+
+      <label>Telefonnummer: <br> <input type="tel" name="tnummer" placeholder=" (___)(_______)" required
+          autofocus /></label><br><br>
+        
+    </fieldset>
+  </div>
+  <div>
+    <fieldset>
+
+      <legend>Speisekarte</legend>
+
+      <select size="5" name="menu" multiple>
+
+        <option selected="" value="none">Keiner</option>
+
+        <optgroup label="Suppen">
+          <option value="c1">Linsen</option>
+          <option value="c2">Ezogelin</option>
+          <option value="c3">Tarhana</option>
+        </optgroup>
+
+        <optgroup label="Hauptspeisen">
+          <option value="y1">İmambayıldı</option>
+          <option value="y2">Sultanbeğendi</option>
+          <option value="y3">Kuru fasulye</option>
+        </optgroup>
+
+        <optgroup label="Nachspeisen">
+          <option value="t1">Kazandibi</option>
+          <option value="t2">Sütlaç</option>
+          <option value="t3">Keşkül</option>
+        </optgroup>
+
+        <select name="sose">
+          <input list="sosen" placeholder="Sosen">
+          <datalist id="sosen">
+            <option value="extra scharfe Soße">
+            <option value="Granatapfelsauce">
+            <option value="Barbecue Soße">
+            <option value="Joghurtsauce">
+            <option value="Scharfe Soße">
+          </datalist>
+        </select>
+   
+    </fieldset>
+  </div>
+  <div>
+    <fieldset>
+      <legend>Besonderheiten</legend>
+
+      <input type="radio" id="vegan" name="gicik">
+      <label for="vegan">Vegan</label><br>
+
+      <input type="radio" id="gfree" name="gicik" >
+      <label for="gfree">Glutenfrei</label><br>
+
+      <input type="radio" id="lfree" name="gicik">
+      <label for="lfree">Laktosefrei</label>
+
+    </fieldset>
+  </div>
+  <div>
+    <fieldset>
+      <legend>Sonderwünsche</legend>
+      <textarea name="" id="" cols="30" rows="5" placeholder="wenig Salz / wenig Fett usw."></textarea>
+    </fieldset>
+  </div>
+  <div>
+    <fieldset>
+
+      <legend> Wann sollen wir es bringen?</legend>
+
+      <input type="date"> <br><br>
+      Zwischen <input type="time"> und <input type="time">
+    </fieldset>
+  </div>
+  <div>
+
+    <button type="reset">Eingaben zurücksetzen</button>
+    <button type="submit">Bestellen</button>
+  </div>
+  </form>
+</body>
+
+</html>

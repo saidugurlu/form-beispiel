@@ -1,0 +1,65 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root {
+    font-size:62.5%;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.6rem;
+}
+ 
+fieldset
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+header {
+    background-color:rgb(32, 77, 77);
+    color:white;
+    text-align:center;
+    padding:2rem;
+}
+div{
+    width:40%;
+    margin: 3rem auto;
+    color: hsl(180, 41%, 21%);
+    text-align: center;
+   
+}
+h2, h3 {
+    text-align: center;
+    padding: 3rem 0 1rem 0;
+    color: rgb(32, 77, 77);
+    
+}
+label, legend{
+ font-weight: 600;
+ 
+}
+fieldset{
+    padding: 2rem;
+    background-color: antiquewhite;
+}
+ 
+button{
+    color:white;
+    background-color: rgb(32, 77, 77);
+    padding: 0 1.5rem;
+    height: 3rem;
+    border-radius: 7px;
+    margin: 1rem;
+    
+}
+button:hover{
+    color:rgb(32, 77, 77) ;
+    background-color: white;
+    
+}
+select{
+    color: rgb(32, 77, 77);
+}
